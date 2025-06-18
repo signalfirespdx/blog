@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="https://signalfirespdx.github.io/blog/sitemap.xsl"?>
+<?xml-stylesheet type="text/xsl" href="https://signalfirespdx.com/sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 <url>
-<loc>https://signalfirespdx.github.io/blog/</loc>
+<loc>https://signalfirespdx.com/</loc>
 </url>
 <url>
-<loc>https://signalfirespdx.github.io/blog/posts/deportation-machine-next-door/</loc>
+<loc>https://signalfirespdx.com/posts/deportation-machine-next-door/</loc>
 </url>
 <url>
-<loc>https://signalfirespdx.github.io/blog/posts/oregons-riot-law/</loc>
+<loc>https://signalfirespdx.com/posts/oregons-riot-law/</loc>
 </url>
 <url>
-<loc>https://signalfirespdx.github.io/blog/take-action-help-stop-the-violence/</loc>
+<loc>https://signalfirespdx.com/take-action-help-stop-the-violence/</loc>
 <lastmod>2025-06-18T15:42:23-07:00</lastmod>
 </url>
 </urlset>

@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
     <title>Signal Fires PDX</title>
-    <link href="https://signalfirespdx.github.io/blog/feed.xml" rel="self" />
-    <link href="https://signalfirespdx.github.io/blog" />
+    <link href="https://signalfirespdx.com/feed.xml" rel="self" />
+    <link href="https://signalfirespdx.com" />
     <updated>2025-06-18T16:02:42-07:00</updated>
     <author>
         <name>Signal Fires Admin</name>
     </author>
-    <id>https://signalfirespdx.github.io/blog</id>
+    <id>https://signalfirespdx.com</id>
 
     <entry>
         <title>The Deportation Machine Next Door: Why Portland Needs to Revoke ICE&#x27;s Permit</title>
         <author>
             <name>Signal Fires Admin</name>
         </author>
-        <link href="https://signalfirespdx.github.io/blog/posts/deportation-machine-next-door/"/>
-        <id>https://signalfirespdx.github.io/blog/posts/deportation-machine-next-door/</id>
+        <link href="https://signalfirespdx.com/posts/deportation-machine-next-door/"/>
+        <id>https://signalfirespdx.com/posts/deportation-machine-next-door/</id>
 
         <updated>2025-06-18T14:26:59-07:00</updated>
             <summary>
@@ -43,8 +43,8 @@ And watch this short explainer made by local Portlanders: <a href="https://youtu
         <author>
             <name>Signal Fires Admin</name>
         </author>
-        <link href="https://signalfirespdx.github.io/blog/posts/oregons-riot-law/"/>
-        <id>https://signalfirespdx.github.io/blog/posts/oregons-riot-law/</id>
+        <link href="https://signalfirespdx.com/posts/oregons-riot-law/"/>
+        <id>https://signalfirespdx.com/posts/oregons-riot-law/</id>
 
         <updated>2025-06-16T16:00:00-07:00</updated>
             <summary>
