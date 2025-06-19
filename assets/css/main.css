@@ -769,7 +769,9 @@ textarea {
 }
 
 .navbar {
-  margin: auto 0;
+  margin: 0;
+  margin-bottom: auto;
+  /* margin: auto 0; */
 }
 .navbar .navbar__menu {
   display: flex;
@@ -785,7 +787,8 @@ textarea {
     border-bottom: 1px solid var(--color-lighter);
     -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.06);
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.06);
-    flex-direction: row;
+    flex-direction: column;
+
     flex-wrap: wrap;
     gap: initial;
     justify-content: space-between;
@@ -1657,7 +1660,8 @@ textarea {
   align-items: center;
   display: flex;
   height: 2.75rem;
-  justify-content: center;
+  /* justify-content: center; */
+  justify-content: start;
   position: relative;
   /* width: 2.75rem; */
   width: auto;
