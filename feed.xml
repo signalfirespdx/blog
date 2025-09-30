@@ -1,21 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
     <title>Signal Fires PDX</title>
-    <link href="https://signalfirespdx.com/feed.xml" rel="self" />
-    <link href="https://signalfirespdx.com" />
-    <updated>2025-07-09T23:08:57-07:00</updated>
+    <link href="http://10.0.0.162:45989/feed.xml" rel="self" />
+    <link href="http://10.0.0.162:45989" />
+    <updated>2025-09-30T10:45:27-07:00</updated>
     <author>
         <name>Signal Fires Admin</name>
     </author>
-    <id>https://signalfirespdx.com</id>
+    <id>http://10.0.0.162:45989</id>
 
+    <entry>
+        <title>The Land of the Free is Smaller than I Thought</title>
+        <author>
+            <name>Signal Fires Admin</name>
+        </author>
+        <link href="http://10.0.0.162:45989/posts/the-land-of-the-free-is-smaller-than-i-realized/"/>
+        <id>http://10.0.0.162:45989/posts/the-land-of-the-free-is-smaller-than-i-realized/</id>
+        <media:content url="http://10.0.0.162:45989/media/posts/9/bafkreidrqreqi7igjbibmcgwwplzmihypo4iekbbqyodacn3i7o34a4gvi-2.jpg" medium="image" />
+
+        <updated>2025-09-29T17:08:02-07:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="http://10.0.0.162:45989/media/posts/9/bafkreidrqreqi7igjbibmcgwwplzmihypo4iekbbqyodacn3i7o34a4gvi-2.jpg" alt="" />
+                    When 9/11 happened, I was still in elementary school. Even then, I&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="http://10.0.0.162:45989/media/posts/9/bafkreidrqreqi7igjbibmcgwwplzmihypo4iekbbqyodacn3i7o34a4gvi-2.jpg" class="type:primaryImage" alt="" /></p>
+                <p>When 9/11 happened, I was still in elementary school. Even then, I could tell that the Patriot Act was a terrible idea. I knew it gave the government sweeping powers, but I didn’t realize just how much of the country it actually covers until recently.</p><p>I knew about PRISM, the secret NSA program Edward Snowden exposed in 2013, where the government was tapping into Verizon call records and siphoning data straight from companies like Google, Apple, Facebook, and Microsoft. That alone felt like a betrayal: proof that “national security” could be used as an excuse to watch all of us online, all the time.</p><p>But what I didn’t realize was how much the same laws bleed into our <em>physical lives</em> too.  Checkpoints, patrols, and the very real threat of ICE showing up with the power to detain or deport without a judge.</p><p>I started digging into ICE because of everything happening now. What I found floored me: there’s something called the <strong>“100-mile border zone.”</strong> By law, ICE and Border Patrol get special powers inside this band, stretching 100 miles from any border or coastline. Courts also treat international airports as if they were borders, so every airport has its own 100-mile radius too.</p><hr>
+<h2 id="when-i-mapped-it-out">When I Mapped it Out</h2>
+<p> I realized: I’ve lived almost my whole life inside these zones without knowing it. Most Americans have.</p><p>On the map you’ll see:</p><ul>
+<li>🟠 <strong>Orange circles</strong> = 25 miles, where agents can even patrol private land (not homes).</li>
+<li>🟢 <strong>Green shading</strong> = 100 miles from the land borders.</li>
+<li>🔵 <strong>Blue circles</strong> = 100 miles around airports.</li>
+</ul>
+<hr>
+<h2 id="the-constitution-free-zone">The Constitution-Free Zone</h2>
+<p>Inside these areas, ICE/CBP can:</p><ul>
+<li>Stop and question you at checkpoints without suspicion.</li>
+<li>Board buses, trains, and cars without warrants.</li>
+<li>Deport non-citizens without a judge if they can’t prove two years here.</li>
+<li>Search your bags or phone at airports like you never left customs.</li>
+</ul>
+<p>Even U.S. citizens are not immune. People have been detained or even wrongfully deported when they could not immediately prove their status.</p><p>Constitutional protections do not vanish here, but they bend. Full rights only remain in the unshaded parts of the map: the prairies between the zones, the pockets of liberty outside the 100-mile radius. And for most of us, those spaces are smaller than we ever imagined.</p><p>As Benjamin Franklin warned long before the Patriot Act:  </p><blockquote>
+<p>“Those who would give up essential Liberty, to purchase a little temporary Safety, deserve neither Liberty nor Safety.”
+ <cite>&mdash; Benjamin Franklin</cite></p></blockquote>
+<hr>
+<h2 id="are-we-really-free">Are We Really Free?</h2>
+<p>I grew up hearing “land of the free.” But when two-thirds of us live inside this border zone, the freedoms I thought were guaranteed suddenly look a lot smaller.</p><p>Check out the map below: are you free, or are you like most of us, standing where the color touches?</p><p>Are we really free when so much of the country is treated like a checkpoint?</p><div class="post__iframe"><iframe loading="lazy" allowfullscreen style='position: static; height: 40lvh; border-radius: 1rem;' src='/media/files/patriot-act-border/'></iframe></div>
+
+<ul>
+<li>🟠 <strong>Orange circles</strong> = 25 miles, where agents can even patrol private land (not homes).</li>
+<li>🟢 <strong>Green shading</strong> = 100 miles from the land borders.</li>
+<li>🔵 <strong>Blue circles</strong> = 100 miles around airports.</li>
+</ul>
+
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>Open Letter: Let’s Not Divide the Movement Over the ICE Building Closure</title>
         <author>
             <name>Signal Fires Admin</name>
         </author>
-        <link href="https://signalfirespdx.com/posts/open-letter-lets-not-divide-the-movement-over-the-ice-building-closure/"/>
-        <id>https://signalfirespdx.com/posts/open-letter-lets-not-divide-the-movement-over-the-ice-building-closure/</id>
+        <link href="http://10.0.0.162:45989/posts/open-letter-lets-not-divide-the-movement-over-the-ice-building-closure/"/>
+        <id>http://10.0.0.162:45989/posts/open-letter-lets-not-divide-the-movement-over-the-ice-building-closure/</id>
 
         <updated>2025-06-25T16:24:07-07:00</updated>
             <summary>
@@ -34,7 +84,7 @@
 </ul>
 <p>We can hold multiple truths at once. We can grieve the harm this closure causes and still demand abolition. We can fight for better legal access and still protest ICE’s existence. We can show up differently, but toward the same goal.</p><p>Let’s not let omission divide us. Let’s stay focused. Let’s keep building and dismantling together.</p><p><strong>Signed by</strong>
 Local advocates for immigrant rights and protest safety
-(and others in solidarity — contact us to co-sign)</p><p>If this letter resonates with you as a protestor, advocate, or community member, we invite you to co-sign and share.</p><p>To add your name, email <a href="mailto:&#x73;&#105;&#103;&#x6e;&#97;&#108;&#102;&#x69;&#x72;&#101;&#x73;&#x70;&#100;&#x78;&#x40;&#112;&#x72;&#111;&#x74;&#x6f;&#110;&#109;&#x61;&#x69;&#108;&#x2e;&#99;&#111;&#109;">&#x73;&#105;&#103;&#x6e;&#97;&#108;&#102;&#x69;&#x72;&#101;&#x73;&#x70;&#100;&#x78;&#x40;&#112;&#x72;&#111;&#x74;&#x6f;&#110;&#109;&#x61;&#x69;&#108;&#x2e;&#99;&#111;&#109;</a>
+(and others in solidarity — contact us to co-sign)</p><p>If this letter resonates with you as a protestor, advocate, or community member, we invite you to co-sign and share.</p><p>To add your name, email <a href="mailto:&#115;&#105;&#x67;&#110;&#x61;&#108;&#102;&#x69;&#x72;&#101;&#115;&#112;&#100;&#120;&#x40;&#112;&#x72;&#111;&#116;&#111;&#x6e;&#x6d;&#97;&#105;&#x6c;&#46;&#99;&#x6f;&#x6d;">&#115;&#105;&#x67;&#110;&#x61;&#108;&#102;&#x69;&#x72;&#101;&#115;&#112;&#100;&#120;&#x40;&#112;&#x72;&#111;&#116;&#111;&#x6e;&#x6d;&#97;&#105;&#x6c;&#46;&#99;&#x6f;&#x6d;</a>
 To help spread the message, share this letter with your networks, especially in spaces where there is confusion or division around the ICE building closure.</p><p>We show up in different ways, but we are in this together. Let’s keep our focus on the system, not each other.</p>
             ]]>
         </content>
@@ -44,8 +94,8 @@ To help spread the message, share this letter with your networks, especially in 
         <author>
             <name>Signal Fires Admin</name>
         </author>
-        <link href="https://signalfirespdx.com/posts/the-collapsing-shield/"/>
-        <id>https://signalfirespdx.com/posts/the-collapsing-shield/</id>
+        <link href="http://10.0.0.162:45989/posts/the-collapsing-shield/"/>
+        <id>http://10.0.0.162:45989/posts/the-collapsing-shield/</id>
 
         <updated>2025-06-21T03:08:02-07:00</updated>
             <summary>
@@ -134,8 +184,8 @@ The other drifts into radicalized hostility, collapsing policies into identity a
         <author>
             <name>Signal Fires Admin</name>
         </author>
-        <link href="https://signalfirespdx.com/posts/i-wanted-to-know/"/>
-        <id>https://signalfirespdx.com/posts/i-wanted-to-know/</id>
+        <link href="http://10.0.0.162:45989/posts/i-wanted-to-know/"/>
+        <id>http://10.0.0.162:45989/posts/i-wanted-to-know/</id>
 
         <updated>2025-06-20T12:44:39-07:00</updated>
             <summary>
@@ -183,8 +233,8 @@ The other drifts into radicalized hostility, collapsing policies into identity a
         <author>
             <name>Signal Fires Admin</name>
         </author>
-        <link href="https://signalfirespdx.com/posts/the-hidden-cruelty-of-progressive-cities-a-portland-case-study/"/>
-        <id>https://signalfirespdx.com/posts/the-hidden-cruelty-of-progressive-cities-a-portland-case-study/</id>
+        <link href="http://10.0.0.162:45989/posts/the-hidden-cruelty-of-progressive-cities-a-portland-case-study/"/>
+        <id>http://10.0.0.162:45989/posts/the-hidden-cruelty-of-progressive-cities-a-portland-case-study/</id>
 
         <updated>2025-06-19T00:17:45-07:00</updated>
             <summary>
@@ -258,8 +308,8 @@ The other drifts into radicalized hostility, collapsing policies into identity a
         <author>
             <name>Signal Fires Admin</name>
         </author>
-        <link href="https://signalfirespdx.com/posts/deportation-machine-next-door/"/>
-        <id>https://signalfirespdx.com/posts/deportation-machine-next-door/</id>
+        <link href="http://10.0.0.162:45989/posts/deportation-machine-next-door/"/>
+        <id>http://10.0.0.162:45989/posts/deportation-machine-next-door/</id>
 
         <updated>2025-06-18T14:26:59-07:00</updated>
             <summary>
@@ -288,8 +338,8 @@ And watch this short explainer made by local Portlanders: <a href="https://youtu
         <author>
             <name>Signal Fires Admin</name>
         </author>
-        <link href="https://signalfirespdx.com/posts/oregons-riot-law/"/>
-        <id>https://signalfirespdx.com/posts/oregons-riot-law/</id>
+        <link href="http://10.0.0.162:45989/posts/oregons-riot-law/"/>
+        <id>http://10.0.0.162:45989/posts/oregons-riot-law/</id>
 
         <updated>2025-06-16T16:00:00-07:00</updated>
             <summary>

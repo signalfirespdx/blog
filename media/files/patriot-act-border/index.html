@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>US 100‑mile Border Band & International Airports (Leaflet)</title>
+    <!-- Leaflet only (Turf removed) -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      crossorigin="anonymous" />
+    <script
+      defer
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      crossorigin="anonymous"></script>
+
+    <script
+      defer
+      src="https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js"></script>
+    <link
+      href="https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css"
+      rel="stylesheet" />
+
+    <!-- Data sources (globals). Provide these files in the same directory. -->
+    <script src="./us_boundary.js"></script>
+    <script src="./international_airports.js"></script>
+    <!-- Optional precomputed coverages (GeoJSON Features/FeatureCollections) -->
+    <script src="./airport_coverage_100mi.js"></script>
+    <script src="./airport_coverage_25mi.js"></script>
+    <!-- Optional precomputed border bands -->
+    <script src="./border_band_100mi.js"></script>
+    <script src="./border_band_25mi.js"></script>
+
+    <style>
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+      }
+      #map {
+        position: absolute;
+        inset: 0;
+      }
+      .panel {
+        position: absolute;
+        z-index: 500;
+        right: 12px;
+        bottom: 12px;
+        max-width: 340px;
+        background: rgba(255, 255, 255, 0.92);
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        padding: 8px 10px;
+        font: 12px/1.35 system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+        box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+      }
+      button {
+        font: inherit;
+        padding: 6px 10px;
+        border-radius: 8px;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        background: #fff;
+        cursor: pointer;
+      }
+      button:hover {
+        background: #f5f5f5;
+      }
+      #status {
+        font-size: 11px;
+        color: #111;
+        margin-bottom: 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+
+    <script>
+      window.addEventListener('load', () => {
+        // ---- Config (visual only; all geometry is precomputed) ----
+        const EXTRA_CHECK_MILES = 25; // orange airport circle radius
+        const MILES_TO_METERS = 1609.344;
+        const EXTRA_CHECK_METERS = EXTRA_CHECK_MILES * MILES_TO_METERS; // 25 mi
+        const HUNDRED_MI_METERS = 100 * MILES_TO_METERS; // 100 mi outline
+
+        // ---- Map ----
+        const map = L.map('map', {
+          preferCanvas: true,
+          minZoom: 3,
+          worldCopyJump: true,
+          fullscreenControl: true,
+          fullscreenControlOptions: { position: 'topleft' },
+        }).setView([45.5898, -122.5951], 7);
+
+        const base = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          maxZoom: 10,
+          attribution: '&copy; OpenStreetMap',
+        }).addTo(map);
+
+        // Layers
+        const borderBandLayer = L.geoJSON(null, {
+          style: { color: '#1d4ed8', weight: 1, fillColor: '#60a5fa', fillOpacity: 0.25 },
+        });
+        const borderBand25Layer = L.geoJSON(null, {
+          style: { color: '#e11d48', weight: 1, fillColor: '#fb923c', fillOpacity: 0.35 },
+        });
+        const airportsLayer = L.layerGroup();
+        const airportsCoverageLayer = L.geoJSON(null, {
+          style: { color: '#065f46', weight: 1, fillColor: '#34d399', fillOpacity: 0.22 },
+        });
+        const airportsCoverage25Layer = L.geoJSON(null, {
+          style: { color: '#c2410c', weight: 1, fillColor: '#fdba74', fillOpacity: 0.35 },
+        });
+        const outlinesLayer = L.geoJSON(null, {
+          style: { color: '#111827', weight: 1, fillOpacity: 0 },
+        });
+
+        L.control
+          .layers(
+            { OpenStreetMap: base },
+            {
+              '100 mi Border Band': borderBandLayer,
+              '25 mi from Border': borderBand25Layer,
+              'Airport Coverage (100 mi)': airportsCoverageLayer,
+              '25 mi from Airport': airportsCoverage25Layer,
+              'Airport Circles (25 & 100 mi)': airportsLayer,
+            }
+          )
+          .addTo(map);
+
+        // ---- Outline & fit ----
+        if (window.US_BOUNDARY) {
+          try {
+            outlinesLayer.addData(window.US_BOUNDARY).addTo(map);
+          } catch {}
+        }
+        try {
+          if (outlinesLayer.getLayers().length) map.fitBounds(outlinesLayer.getBounds());
+        } catch {}
+
+        // ---- Optional precomputed bands ----
+        if (window.BORDER_BAND_100MI) {
+          try {
+            borderBandLayer.addData(window.BORDER_BAND_100MI).addTo(map);
+          } catch {}
+        }
+        if (window.BORDER_BAND_25MI) {
+          try {
+            borderBand25Layer.addData(window.BORDER_BAND_25MI).addTo(map);
+          } catch {}
+        }
+
+        // ---- Airport circles (25 & 100 mi visuals) ----
+        const airports = Array.isArray(window.INTERNATIONAL_AIRPORTS)
+          ? window.INTERNATIONAL_AIRPORTS
+          : [];
+
+        for (const r of airports) {
+          const lat = Number(r.latitude_deg),
+            lon = Number(r.longitude_deg);
+          if (!Number.isFinite(lat) || !Number.isFinite(lon)) continue;
+          const label = r.name || r.ident || r.iata_code || 'Airport';
+          // 100‑mile outline (stroke only)
+          const c100 = L.circle([lat, lon], {
+            radius: HUNDRED_MI_METERS,
+            color: '#065f46',
+            weight: 1,
+            dashArray: '4 4',
+            fill: false,
+            opacity: 0.9,
+          }).bindPopup(label + ' — 100 mi');
+
+          // 25‑mile orange fill
+          const c25 = L.circle([lat, lon], {
+            radius: EXTRA_CHECK_METERS,
+            color: '#c2410c',
+            fillColor: '#fdba74',
+            fillOpacity: 0.35,
+            weight: 1,
+            opacity: 0.9,
+          }).bindPopup(label + ' — 25 mi');
+          airportsLayer.addLayer(c100);
+          airportsLayer.addLayer(c25);
+        }
+        // airportsLayer remains OFF by default; use toggle to show/hide both circle radii.
+
+        // ---- Airport coverage layers (precomputed) ----
+        const merged100 = window.AIRPORT_COVERAGE_100MI || null;
+        if (merged100) {
+          try {
+            airportsCoverageLayer.addData(merged100).addTo(map);
+          } catch {}
+        }
+        const merged25 = window.AIRPORT_COVERAGE_25MI || null;
+        if (merged25) {
+          try {
+            airportsCoverage25Layer.addData(merged25).addTo(map);
+          } catch {}
+        }
+      });
+    </script>
+  </body>
+</html>
