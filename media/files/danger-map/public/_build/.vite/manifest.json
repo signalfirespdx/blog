@@ -1,0 +1,23 @@
+{
+  "node_modules/.pnpm/@automerge+automerge@3.1.2/node_modules/@automerge/automerge/dist/mjs/wasm_bindgen_output/bundler/automerge_wasm_bg.wasm": {
+    "file": "assets/automerge_wasm_bg-DlmoAj_s.wasm",
+    "src": "node_modules/.pnpm/@automerge+automerge@3.1.2/node_modules/@automerge/automerge/dist/mjs/wasm_bindgen_output/bundler/automerge_wasm_bg.wasm"
+  },
+  "node_modules/.pnpm/leaflet-draw@1.0.4/node_modules/leaflet-draw/dist/images/spritesheet.svg": {
+    "file": "assets/spritesheet-DpIxuf5L.svg",
+    "src": "node_modules/.pnpm/leaflet-draw@1.0.4/node_modules/leaflet-draw/dist/images/spritesheet.svg"
+  },
+  "virtual:$vinxi/handler/client": {
+    "file": "assets/client-B5Pbm-08.js",
+    "name": "client",
+    "src": "virtual:$vinxi/handler/client",
+    "isEntry": true,
+    "css": [
+      "assets/client-Bu_cuGLy.css"
+    ],
+    "assets": [
+      "assets/automerge_wasm_bg-DlmoAj_s.wasm",
+      "assets/spritesheet-DpIxuf5L.svg"
+    ]
+  }
+}

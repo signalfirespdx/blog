@@ -1,0 +1,6 @@
+{
+  "websocketHosts": [
+    "wss://signals.signalfirespdx.com",
+    "wss://sync.automerge.org"
+  ]
+}

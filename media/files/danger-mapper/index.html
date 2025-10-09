@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>US 100‑mile Border Band & International Airports (Leaflet)</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      crossorigin="anonymous" />
+    <script
+      defer
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      crossorigin="anonymous"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet-draw@1.0.4/dist/leaflet.draw.css"
+      crossorigin="anonymous" />
+    <script
+      defer
+      src="https://unpkg.com/leaflet-draw@1.0.4/dist/leaflet.draw.js"
+      crossorigin="anonymous"></script>
+
+    <script
+      defer
+      crossorigin="anonymous"
+      src="https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js"></script>
+    <link
+      href="https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css"
+      rel="stylesheet" />
+    <!-- IPFS (browser) -->
+    <script src="https://unpkg.com/ipfs-core/dist/index.min.js"></script>
+    <!-- OrbitDB (legacy bundle, works great in the browser) -->
+    <script src="https://cdn.jsdelivr.net/npm/orbit-db@0.29.0/dist/orbitdb.min.js"></script>
+
+    <script src="./main.js"></script>
+
+    <style>
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+      }
+      #map {
+        position: absolute;
+        inset: 0;
+      }
+
+      .emoji-marker {
+        background: none;
+        border: none;
+        font-size: 30px;
+      }
+      .panel {
+        position: absolute;
+        z-index: 500;
+        right: 12px;
+        bottom: 12px;
+        max-width: 340px;
+        background: rgba(255, 255, 255, 0.92);
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        padding: 8px 10px;
+        font: 12px/1.35 system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+        box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+      }
+      button {
+        font: inherit;
+        padding: 6px 10px;
+        border-radius: 8px;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        background: #fff;
+        cursor: pointer;
+      }
+      button:hover {
+        background: #f5f5f5;
+      }
+      #status {
+        font-size: 11px;
+        color: #111;
+        margin-bottom: 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+
+    <script></script>
+  </body>
+</html>
