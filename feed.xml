@@ -3,12 +3,38 @@
     <title>Signal Fires PDX</title>
     <link href="https://signalfirespdx.com/feed.xml" rel="self" />
     <link href="https://signalfirespdx.com" />
-    <updated>2025-09-30T11:46:47-07:00</updated>
+    <updated>2025-10-10T10:03:12-07:00</updated>
     <author>
         <name>Signal Fire</name>
     </author>
     <id>https://signalfirespdx.com</id>
 
+    <entry>
+        <title>We Live in Dangerous Times</title>
+        <author>
+            <name>Signal Fire</name>
+        </author>
+        <link href="https://signalfirespdx.com/posts/we-live-in-dangerous-times/"/>
+        <id>https://signalfirespdx.com/posts/we-live-in-dangerous-times/</id>
+        <media:content url="https://signalfirespdx.com/media/posts/12/signal-2025-10-09-230532.png" medium="image" />
+
+        <updated>2025-10-10T10:03:12-07:00</updated>
+            <summary>
+                <![CDATA[
+                        <img src="https://signalfirespdx.com/media/posts/12/signal-2025-10-09-230532.png" alt="" />
+                    It’s dangerous to go alone. Take this. Open the Danger Map →&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                    <p><img src="https://signalfirespdx.com/media/posts/12/signal-2025-10-09-230532.png" class="type:primaryImage" alt="" /></p>
+                <blockquote>
+<p>It’s dangerous to go alone. Take this.</p></blockquote>
+<p><a href="/media/files/danger-map/public/"><strong>Open the Danger Map →</strong></a></p><p>The <strong>Danger Map</strong> is a <strong>publicly editable, anonymous map</strong> for sharing local hazards and safety concerns with your neighbors. It’s designed to be <strong>resilient, decentralized, and community driven</strong>, syncing data across multiple independent servers and sites that all share the same network of information.</p><p>No single server or platform controls the data. If one goes down, the others keep the map alive.</p><p>If you’re running your own server, <strong>you can help strengthen the network</strong> by running an <a href="https://github.com/automerge/automerge-repo-sync-server"><strong>Automerge Repo Sync Server</strong></a>. Let us know and we’ll add your instance to the list of peers so your data syncs with the rest of the network.</p><p>If you want to host your own copy of the map, <strong>fantastic</strong>. We can help you get started. Setup is simple, and every new host makes the system more resilient for everyone.</p><p>We keep each other safe, and <strong>knowledge is power</strong>.
+Use the Danger Map to <strong>warn your neighbors</strong> and <strong>stay informed together</strong>.</p>
+            ]]>
+        </content>
+    </entry>
     <entry>
         <title>The Land of the Free is Smaller than I Thought</title>
         <author>
@@ -108,7 +134,7 @@
 </ul>
 <p>We can hold multiple truths at once. We can grieve the harm this closure causes and still demand abolition. We can fight for better legal access and still protest ICE’s existence. We can show up differently, but toward the same goal.</p><p>Let’s not let omission divide us. Let’s stay focused. Let’s keep building and dismantling together.</p><p><strong>Signed by</strong>
 Local advocates for immigrant rights and protest safety
-(and others in solidarity — contact us to co-sign)</p><p>If this letter resonates with you as a protestor, advocate, or community member, we invite you to co-sign and share.</p><p>To add your name, email <a href="mailto:&#x73;&#x69;&#x67;&#x6e;&#x61;&#108;&#x66;&#x69;&#114;&#x65;&#115;&#112;&#x64;&#x78;&#x40;&#x70;&#114;&#111;&#x74;&#x6f;&#110;&#x6d;&#x61;&#x69;&#108;&#46;&#99;&#x6f;&#109;">&#x73;&#x69;&#x67;&#x6e;&#x61;&#108;&#x66;&#x69;&#114;&#x65;&#115;&#112;&#x64;&#x78;&#x40;&#x70;&#114;&#111;&#x74;&#x6f;&#110;&#x6d;&#x61;&#x69;&#108;&#46;&#99;&#x6f;&#109;</a>
+(and others in solidarity — contact us to co-sign)</p><p>If this letter resonates with you as a protestor, advocate, or community member, we invite you to co-sign and share.</p><p>To add your name, email <a href="mailto:&#x73;&#x69;&#x67;&#110;&#97;&#108;&#102;&#105;&#x72;&#x65;&#115;&#x70;&#x64;&#120;&#64;&#x70;&#x72;&#111;&#x74;&#111;&#110;&#x6d;&#97;&#105;&#108;&#46;&#x63;&#111;&#109;">&#x73;&#x69;&#x67;&#110;&#97;&#108;&#102;&#105;&#x72;&#x65;&#115;&#x70;&#x64;&#120;&#64;&#x70;&#x72;&#111;&#x74;&#111;&#110;&#x6d;&#97;&#105;&#108;&#46;&#x63;&#111;&#109;</a>
 To help spread the message, share this letter with your networks, especially in spaces where there is confusion or division around the ICE building closure.</p><p>We show up in different ways, but we are in this together. Let’s keep our focus on the system, not each other.</p>
             ]]>
         </content>
