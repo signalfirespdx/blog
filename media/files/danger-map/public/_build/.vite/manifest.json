@@ -8,12 +8,12 @@
     "src": "node_modules/.pnpm/leaflet-draw@1.0.4/node_modules/leaflet-draw/dist/images/spritesheet.svg"
   },
   "virtual:$vinxi/handler/client": {
-    "file": "assets/client-B5Pbm-08.js",
+    "file": "assets/client-61aqLbDB.js",
     "name": "client",
     "src": "virtual:$vinxi/handler/client",
     "isEntry": true,
     "css": [
-      "assets/client-Bu_cuGLy.css"
+      "assets/client-oNXZAlXv.css"
     ],
     "assets": [
       "assets/automerge_wasm_bg-DlmoAj_s.wasm",
