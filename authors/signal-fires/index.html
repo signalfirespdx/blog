@@ -9,61 +9,7 @@
                     this.classList.add('is-loaded');
                 }, false);
             }
-        }</script><script data-goatcounter="https://signalfirespdx.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script><script>(function() {
-  // Only act in Publii's file:// preview
-  if (location.protocol !== 'file:') return;
-
-  var selector = "iframe[src],img[src],a[href],link[href],script[src]";
-  var prefixes = ["/media/"];
-
-  // Decide which attribute we should touch per element
-  function attrFor(el) {
-    var t = el.tagName.toLowerCase();
-    if (t === 'a' || t === 'link') return 'href';
-    return 'src';
-  }
-
-  // Does the URL start with one of our root prefixes?
-  function hasWantedPrefix(u) {
-    if (!u || typeof u !== 'string') return false;
-    if (!u.startsWith('/')) return false; // we only handle root-absolute here
-    for (var i = 0; i < prefixes.length; i++) {
-      if (u.indexOf(prefixes[i]) === 0) return true;
-    }
-    return false;
-  }
-
-  // Rewrite rule requested:
-  //   /media/files/patriot-act-border/  -->  ./media/files/patriot-act-border/index.html
-  function rewriteForPreview(u) {
-    // Only root-absolute media paths
-    if (!hasWantedPrefix(u)) return u;
-
-    // If it already points to a file (has a filename with a dot), leave it
-    // e.g., /media/foo/app.html, /media/foo/bundle.js
-    var lastSegment = u.split('?')[0].split('#')[0].split('/').pop();
-    if (lastSegment && /\./.test(lastSegment)) return u; // has an extension
-
-    // Ensure trailing slash so we treat it as a directory
-    if (!/\/$/.test(u)) u += '/';
-
-    // Convert /media/.../  ->  ./media/.../index.html
-    var withoutLeadingSlash = u.replace(/^\/+/, ''); // media/...
-    return './' + withoutLeadingSlash + 'index.html';
-  }
-
-  document.querySelectorAll(selector).forEach(function(el) {
-    var attr = attrFor(el);
-    if (!el.hasAttribute(attr)) return;
-
-    var val = el.getAttribute(attr);
-    var newVal = rewriteForPreview(val);
-
-    if (newVal !== val) {
-      el.setAttribute(attr, newVal);
-    }
-  });
-})();</script><script src="https://signalfirespdx.com/media/plugins/pagePrefetching/quicklink.umd.js"></script><script>window.addEventListener('load', () => {
+        }</script><script data-goatcounter="https://signalfirespdx.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script><script src="https://signalfirespdx.com/media/plugins/pagePrefetching/quicklink.umd.js"></script><script>window.addEventListener('load', () => {
 					quicklink.listen({
 						prerender: true,
 						el: document.querySelector('body'),
